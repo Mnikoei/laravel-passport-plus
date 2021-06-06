@@ -1,0 +1,33 @@
+{
+    "name": "mnikoei/laravel-passport-plus",
+    "description": "This package helps you generate passport tokens without http request and also caching users and tokens",
+    "keywords": ["laravel", "passport", "oauth"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohsen nikoei",
+            "email": "mohsen.nikoei@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/passport": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mnikoei\\PassportPlus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mnikoei\\PassportPlus\\PassportPlusServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
