@@ -25,7 +25,7 @@ class PassportPlus
             'password' => $password,
             'client_id' => $clientId,
             'client_secret' => $clientSecret,
-            'scope' => implode(',', $scopes),
+            'scope' => $scopes,
             'grant_type' => 'password'
         ]);
 
