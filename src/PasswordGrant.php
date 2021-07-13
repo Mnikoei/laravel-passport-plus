@@ -30,6 +30,7 @@ class PasswordGrant extends BasePasswordGrant
         $client = $this->validateClient($request);
         $scopes = $this->validateScopes($this->getRequestParameter('scope', $request, $this->defaultScope));
         $user = $this->validateUser($request, $client);
+
         $customData = $this->getCustomData($request);
 
         // Finalize the requested scopes
